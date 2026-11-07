@@ -1,0 +1,50 @@
+.json-fetch-app {
+  padding: 2rem;
+  background: #fff;
+  min-height: 100%;
+}
+
+.json-fetch-app__hint {
+  margin: 0 0 1.25rem;
+  color: #4b5563;
+}
+
+.json-fetch-app__hint code {
+  background: #f3f4f6;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.json-fetch-app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.json-fetch-card {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  background: #fafafa;
+}
+
+.json-fetch-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.json-fetch-card__error {
+  color: #b91c1c;
+  margin: 0;
+}
+
+.json-fetch-card__loading {
+  color: #2563eb;
+  margin: 0;
+}
+
+.json-fetch-card__ok {
+  margin: 0;
+  white-space: pre-wrap;
+  color: #166534;
+}

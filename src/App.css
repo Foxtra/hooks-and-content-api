@@ -1,0 +1,48 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #1f2937;
+  color: #fff;
+}
+
+.app-nav__title {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.app-nav__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.app-nav__tab {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #d1d5db;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.app-nav__tab:hover {
+  color: #fff;
+  background: #374151;
+}
+
+.app-nav__tab--active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.app-main {
+  flex: 1;
+}

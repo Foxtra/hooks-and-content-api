@@ -1,0 +1,98 @@
+.use-effect-app {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: flex-start;
+  background: #fff;
+  min-height: 100%;
+}
+
+.use-effect-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.use-effect-list__item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  color: #111827;
+}
+
+.use-effect-list li:last-child .use-effect-list__item {
+  border-bottom: none;
+}
+
+.use-effect-list__item:hover {
+  background: #f3f4f6;
+}
+
+.use-effect-list__item--active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.use-effect-list__item--active:hover {
+  background: #0b5ed7;
+}
+
+.use-effect-details {
+  width: 280px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.use-effect-details__avatar {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.use-effect-details__name {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-size: 1.15rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.use-effect-details__meta {
+  margin: 0;
+}
+
+.use-effect-details__meta > div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.use-effect-details__meta > div:last-child {
+  border-bottom: none;
+}
+
+.use-effect-details__meta dt {
+  font-weight: 700;
+  margin: 0;
+}
+
+.use-effect-details__meta dt::after {
+  content: ':';
+}
+
+.use-effect-details__meta dd {
+  margin: 0;
+}

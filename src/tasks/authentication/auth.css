@@ -1,0 +1,176 @@
+.auth-app {
+  min-height: 100%;
+  background: #f3f4f6;
+}
+
+.auth-app__hint {
+  margin: 0;
+  padding: 0.65rem 1.25rem;
+  background: #e5e7eb;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.auth-app__hint code {
+  background: #fff;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.auth-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  background: #eceff1;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.auth-toolbar__brand {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.auth-toolbar__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #374151;
+}
+
+.auth-toolbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #cbd5e1;
+}
+
+.auth-login-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.auth-login-form input {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 0.4rem 0.65rem;
+  background: #fff;
+  min-width: 140px;
+}
+
+.auth-login-form__error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  width: 100%;
+  text-align: right;
+}
+
+.auth-btn {
+  border-radius: 4px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  background: #fff;
+}
+
+.auth-btn--login {
+  border: 1px solid #198754;
+  color: #198754;
+}
+
+.auth-btn--login:hover {
+  background: #d1e7dd;
+}
+
+.auth-btn--logout {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.auth-btn--logout:hover {
+  background: #f8d7da;
+}
+
+.auth-app__content {
+  padding: 1.5rem;
+}
+
+.auth-landing {
+  background: #e9ecef;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  max-width: 960px;
+}
+
+.auth-landing h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+  color: #343a40;
+}
+
+.auth-landing p {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #495057;
+}
+
+.auth-news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 960px;
+}
+
+.auth-news-card {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.auth-news-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.auth-news-card__body {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.auth-news-card__body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: #343a40;
+}
+
+.auth-news-card__body p {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.45;
+}
+
+.auth-feed-status {
+  color: #4b5563;
+}
+
+.auth-feed-status--error {
+  color: #b91c1c;
+}
+
+@media (max-width: 720px) {
+  .auth-news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
